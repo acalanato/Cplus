@@ -9,5 +9,5 @@ int main() {
   std::cin >> b;
 
   sum = a + b;
-  cout << "Sum:" << sum << endl;
+  cout << "Sum: " << sum << endl;
 }
