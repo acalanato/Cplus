@@ -35,8 +35,37 @@ int incrDecr() {
   return x;
 }
 
+int comma() {
+  int b = 0;
+  int a = (b = 3, b + 2);
+  return a;
+}
+
+void bitAbit() {
+  int a = 10000000;
+  auto b = a >> 2;
+  std::cout << b << std::endl;
+}
+
+int cast() {
+  int i;
+  float f = 3.14;
+  i = (int) f;
+  return i;
+}
+
+int sized() {
+  int x = sizeof (char);
+  return x;
+}
+
 int main() {
   assign();
   std::cout << incrDecr() << std::endl;
   tf();
+  std::cout << comma() << std::endl;
+  bitAbit();
+  std::cout << cast() << std::endl;
+  std::cout << sized() << std::endl;
+  return 0;
 }
