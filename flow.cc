@@ -59,16 +59,33 @@ void dow() {
   } while (str != "goodbye");
 }
 
-// Range-based loop
+string rangeBased(string str) {
+  //string str {"Olár!"};
+  for (char c: str) {
+    cout << "[" << c << "]";
+  }
+  return str;
+}
+
+void jumpando(int n) {
+ comeco:
+  cout << n << ", ";
+  n--;
+  if (n>0) goto comeco;
+  cout << "revolution baby!\n";
+}
 
 int main() {
   ternary(1);
   simple(100);
   compound(50);
   ifelse(10);
-  ifelselse(20);
+  ifelselse(40);
   whil(5);
   _for(10);
-  dow();
+  //dow();
+  rangeBased("Oloco meu!");
+  cout << endl;
+  jumpando(5);
   return 0;
 }
