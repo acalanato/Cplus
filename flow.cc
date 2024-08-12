@@ -75,7 +75,25 @@ void jumpando(int n) {
   cout << "revolution baby!\n";
 }
 
+void swCase() {
+  int opt;
+  cout << "Chose a number between one and three:\n";
+  cin >> opt;
+  switch (opt) {
+  case 1:
+    cout << "One";
+    break;
+  case 2:
+    cout << "Two";
+    break;
+  case 3:
+    cout << "Three";
+  }
+  cout << endl << "What did you expected?" << endl;
+}
+
 int main() {
+  /*
   ternary(1);
   simple(100);
   compound(50);
@@ -87,5 +105,7 @@ int main() {
   rangeBased("Oloco meu!");
   cout << endl;
   jumpando(5);
+  */
+  swCase();
   return 0;
 }
