@@ -20,6 +20,7 @@ inline void concat(int x, int y, int z) { //inline tell the compiler to insert c
 void noFunction(int fear, int mindkiller); // rust custom types!
 void into(int, int);
 
+
 int main() {
   int x = 1, y = 2, z = 3;
   noRefer(x, y, z);
