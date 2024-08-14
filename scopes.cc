@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 
@@ -8,11 +9,12 @@ void println(T s) {
 }
 
 int main() {
-  string a = "Fui declarada no escopo exterior";
+  println("Fui declarada no escopo exterior");
   {
-    string b = "Fu declarada no escopo interior";
-    println(b); //statements inside curled brackets seems to run first
+    println("Fui declarada no escopo interior");
+    {
+      println("E eu no interior do escopo interior");
+    }
   }
-  println(a);
   return 0;
 }
