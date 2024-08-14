@@ -1,1 +1,1 @@
-C/C++ exercises
+C/C++ exercises, mostly sourced from cplusplus.com
