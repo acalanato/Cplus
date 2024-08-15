@@ -1,15 +1,14 @@
 #include <iostream>
 using namespace std;
 
-int arr [10];
+int arr[10];
+int table[3][5];
 
 template <class T> void println(T s) {
   cout << s << endl;
 }
 
 template <class T> void printarr(T arr[], T len) {
-  //int len = sizeof(arr);
-  
   for (int i = 0; i != len; i++) {
     cout << arr[i] << " ";
   }
@@ -17,10 +16,23 @@ template <class T> void printarr(T arr[], T len) {
 }
 
 int main() {
+
   for (int i = 0; i < 10; i++)
     arr[i] = i;
   printarr(arr, 10);
-  int arr[] = {10, 20, 30, 20, 10};
+  
+  int arr[] = {10, 20, 30, 20, 5};
   printarr(arr, 5);
+  
+  int an[] {3,2,1,2};
+  printarr(an, 4);
+
+  for (int i = 0; i < 3; i++) {
+    for (int j = 0; j < 5; j++) {
+      cout <<  table[i][j];
+    }
+    cout << endl;
+  }
+  
   return 0;
 }
