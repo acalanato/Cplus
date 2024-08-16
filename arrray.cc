@@ -10,7 +10,7 @@ template <class T> void println(T s) {
 
 template <class T> T len(T arr[]) {
   int len = 0;
-  for (T i = 0; i != '\0'; i++) {
+  for (T i = 0; i != '\0' ; i++) {
     len++;
   }
   return len;
@@ -45,8 +45,8 @@ int main() {
     }
     cout << endl;
   }
-
-  cout << len(an) << endl;
+  char teste[] = "eita";
+  cout << len(teste) << endl;
   
   return 0;
 }
