@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 int arr[10];
@@ -10,7 +11,7 @@ template <class T> void println(T s) {
 
 template <class T> T len(T arr[]) {
   int len = 0;
-  for (T i = 0; i != '\0' ; i++) {
+  for (T i = 0; arr[i] != '\0' ; i++) {
     len++;
   }
   return len;
@@ -45,8 +46,10 @@ int main() {
     }
     cout << endl;
   }
-  char teste[] = "eita";
-  cout << len(teste) << endl;
+  char ch[] = {'B','o','b','a','o','\0'};
+  string teste = "testes";
+  cout << "Array lenght: " << len(arr) << endl;
+  cout << "Char length: " << teste.length();
   
   return 0;
 }
