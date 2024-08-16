@@ -8,6 +8,14 @@ template <class T> void println(T s) {
   cout << s << endl;
 }
 
+template <class T> T len(T arr[]) {
+  int len = 0;
+  for (T i = 0; i != '\0'; i++) {
+    len++;
+  }
+  return len;
+}
+
 template <class T> void printarr(T arr[], T len) {
   for (int i = 0; i != len; i++) {
     cout << arr[i] << " ";
@@ -38,5 +46,7 @@ int main() {
     cout << endl;
   }
 
+  cout << len(an) << endl;
+  
   return 0;
 }
