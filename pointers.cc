@@ -5,6 +5,23 @@ using namespace std;
 
 template <class T> void println(T s) {std::cout << s << endl;}
 
+void point_add(int* start, int* stop) {
+  int * current = start;
+  while (current != stop) {
+    ++(*current);
+    ++current;
+  }
+}
+
+void print_all(const int *start, const int *stop) {
+  const int *current = start;
+  while (current != stop) {
+    println(current);
+    ++current;
+  }
+}
+
+
 string name = "Endereço";
 
 int main() {
@@ -40,5 +57,11 @@ int main() {
   for (int i = 0; i < 10; i++) {
     println(numbers[i]);
   }
+
+  int num[] = {10, 20, 30};
+  point_add(num, num+3);
+  println("Pointers as arguments:");
+  print_all(numbers, numbers+3);
+  
   return 0;
 }
